@@ -7,6 +7,7 @@ var remainderResult = 0 // 나머지 연산
 
 let input = "330%7"
 
+
 let regex = /[-+*%\/]/
 var sign = input.matches(of: regex).map{String($0.output)}[0]
 var first = Double(input.split(separator: sign)[0])!
