@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFDA49552A6763BA00F82738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49542A6763BA00F82738 /* AppDelegate.swift */; };
+		FFDA49572A6763BA00F82738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49562A6763BA00F82738 /* SceneDelegate.swift */; };
+		FFDA49592A6763BA00F82738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49582A6763BA00F82738 /* ViewController.swift */; };
+		FFDA495C2A6763BA00F82738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA495A2A6763BA00F82738 /* Main.storyboard */; };
+		FFDA495E2A6763BB00F82738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDA495D2A6763BB00F82738 /* Assets.xcassets */; };
+		FFDA49612A6763BB00F82738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA495F2A6763BB00F82738 /* LaunchScreen.storyboard */; };
+		FFDA496C2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA496B2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift */; };
+		FFDA49762A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49752A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift */; };
+		FFDA49782A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49772A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFDA49682A6763BB00F82738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFDA49492A6763BA00F82738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFDA49502A6763BA00F82738;
+			remoteInfo = SpartaCodingCalculator;
+		};
+		FFDA49722A6763BB00F82738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFDA49492A6763BA00F82738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFDA49502A6763BA00F82738;
+			remoteInfo = SpartaCodingCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFDA49512A6763BA00F82738 /* SpartaCodingCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpartaCodingCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDA49542A6763BA00F82738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFDA49562A6763BA00F82738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFDA49582A6763BA00F82738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFDA495B2A6763BA00F82738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFDA495D2A6763BB00F82738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFDA49602A6763BB00F82738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFDA49622A6763BB00F82738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDA49672A6763BB00F82738 /* SpartaCodingCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartaCodingCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDA496B2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartaCodingCalculatorTests.swift; sourceTree = "<group>"; };
+		FFDA49712A6763BB00F82738 /* SpartaCodingCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartaCodingCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDA49752A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartaCodingCalculatorUITests.swift; sourceTree = "<group>"; };
+		FFDA49772A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartaCodingCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFDA494E2A6763BA00F82738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA49642A6763BB00F82738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA496E2A6763BB00F82738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFDA49482A6763BA00F82738 = {
+			isa = PBXGroup;
+			children = (
+				FFDA49532A6763BA00F82738 /* SpartaCodingCalculator */,
+				FFDA496A2A6763BB00F82738 /* SpartaCodingCalculatorTests */,
+				FFDA49742A6763BB00F82738 /* SpartaCodingCalculatorUITests */,
+				FFDA49522A6763BA00F82738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFDA49522A6763BA00F82738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA49512A6763BA00F82738 /* SpartaCodingCalculator.app */,
+				FFDA49672A6763BB00F82738 /* SpartaCodingCalculatorTests.xctest */,
+				FFDA49712A6763BB00F82738 /* SpartaCodingCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFDA49532A6763BA00F82738 /* SpartaCodingCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA49542A6763BA00F82738 /* AppDelegate.swift */,
+				FFDA49562A6763BA00F82738 /* SceneDelegate.swift */,
+				FFDA49582A6763BA00F82738 /* ViewController.swift */,
+				FFDA495A2A6763BA00F82738 /* Main.storyboard */,
+				FFDA495D2A6763BB00F82738 /* Assets.xcassets */,
+				FFDA495F2A6763BB00F82738 /* LaunchScreen.storyboard */,
+				FFDA49622A6763BB00F82738 /* Info.plist */,
+			);
+			path = SpartaCodingCalculator;
+			sourceTree = "<group>";
+		};
+		FFDA496A2A6763BB00F82738 /* SpartaCodingCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA496B2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift */,
+			);
+			path = SpartaCodingCalculatorTests;
+			sourceTree = "<group>";
+		};
+		FFDA49742A6763BB00F82738 /* SpartaCodingCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA49752A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift */,
+				FFDA49772A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift */,
+			);
+			path = SpartaCodingCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFDA49502A6763BA00F82738 /* SpartaCodingCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDA497B2A6763BB00F82738 /* Build configuration list for PBXNativeTarget "SpartaCodingCalculator" */;
+			buildPhases = (
+				FFDA494D2A6763BA00F82738 /* Sources */,
+				FFDA494E2A6763BA00F82738 /* Frameworks */,
+				FFDA494F2A6763BA00F82738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpartaCodingCalculator;
+			productName = SpartaCodingCalculator;
+			productReference = FFDA49512A6763BA00F82738 /* SpartaCodingCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFDA49662A6763BB00F82738 /* SpartaCodingCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDA497E2A6763BB00F82738 /* Build configuration list for PBXNativeTarget "SpartaCodingCalculatorTests" */;
+			buildPhases = (
+				FFDA49632A6763BB00F82738 /* Sources */,
+				FFDA49642A6763BB00F82738 /* Frameworks */,
+				FFDA49652A6763BB00F82738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFDA49692A6763BB00F82738 /* PBXTargetDependency */,
+			);
+			name = SpartaCodingCalculatorTests;
+			productName = SpartaCodingCalculatorTests;
+			productReference = FFDA49672A6763BB00F82738 /* SpartaCodingCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFDA49702A6763BB00F82738 /* SpartaCodingCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDA49812A6763BB00F82738 /* Build configuration list for PBXNativeTarget "SpartaCodingCalculatorUITests" */;
+			buildPhases = (
+				FFDA496D2A6763BB00F82738 /* Sources */,
+				FFDA496E2A6763BB00F82738 /* Frameworks */,
+				FFDA496F2A6763BB00F82738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFDA49732A6763BB00F82738 /* PBXTargetDependency */,
+			);
+			name = SpartaCodingCalculatorUITests;
+			productName = SpartaCodingCalculatorUITests;
+			productReference = FFDA49712A6763BB00F82738 /* SpartaCodingCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFDA49492A6763BA00F82738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FFDA49502A6763BA00F82738 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FFDA49662A6763BB00F82738 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FFDA49502A6763BA00F82738;
+					};
+					FFDA49702A6763BB00F82738 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FFDA49502A6763BA00F82738;
+					};
+				};
+			};
+			buildConfigurationList = FFDA494C2A6763BA00F82738 /* Build configuration list for PBXProject "SpartaCodingCalculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFDA49482A6763BA00F82738;
+			productRefGroup = FFDA49522A6763BA00F82738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFDA49502A6763BA00F82738 /* SpartaCodingCalculator */,
+				FFDA49662A6763BB00F82738 /* SpartaCodingCalculatorTests */,
+				FFDA49702A6763BB00F82738 /* SpartaCodingCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFDA494F2A6763BA00F82738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDA49612A6763BB00F82738 /* LaunchScreen.storyboard in Resources */,
+				FFDA495E2A6763BB00F82738 /* Assets.xcassets in Resources */,
+				FFDA495C2A6763BA00F82738 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA49652A6763BB00F82738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA496F2A6763BB00F82738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFDA494D2A6763BA00F82738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDA49592A6763BA00F82738 /* ViewController.swift in Sources */,
+				FFDA49552A6763BA00F82738 /* AppDelegate.swift in Sources */,
+				FFDA49572A6763BA00F82738 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA49632A6763BB00F82738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDA496C2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA496D2A6763BB00F82738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDA49762A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift in Sources */,
+				FFDA49782A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFDA49692A6763BB00F82738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFDA49502A6763BA00F82738 /* SpartaCodingCalculator */;
+			targetProxy = FFDA49682A6763BB00F82738 /* PBXContainerItemProxy */;
+		};
+		FFDA49732A6763BB00F82738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFDA49502A6763BA00F82738 /* SpartaCodingCalculator */;
+			targetProxy = FFDA49722A6763BB00F82738 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFDA495A2A6763BA00F82738 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFDA495B2A6763BA00F82738 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFDA495F2A6763BB00F82738 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFDA49602A6763BB00F82738 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFDA49792A6763BB00F82738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFDA497A2A6763BB00F82738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFDA497C2A6763BB00F82738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = USP329MK32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpartaCodingCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pinocchio22.SpartaCodingCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFDA497D2A6763BB00F82738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = USP329MK32;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpartaCodingCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pinocchio22.SpartaCodingCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFDA497F2A6763BB00F82738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = USP329MK32;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pinocchio22.SpartaCodingCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpartaCodingCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpartaCodingCalculator";
+			};
+			name = Debug;
+		};
+		FFDA49802A6763BB00F82738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = USP329MK32;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pinocchio22.SpartaCodingCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpartaCodingCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpartaCodingCalculator";
+			};
+			name = Release;
+		};
+		FFDA49822A6763BB00F82738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = USP329MK32;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pinocchio22.SpartaCodingCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpartaCodingCalculator;
+			};
+			name = Debug;
+		};
+		FFDA49832A6763BB00F82738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = USP329MK32;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pinocchio22.SpartaCodingCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpartaCodingCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFDA494C2A6763BA00F82738 /* Build configuration list for PBXProject "SpartaCodingCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDA49792A6763BB00F82738 /* Debug */,
+				FFDA497A2A6763BB00F82738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDA497B2A6763BB00F82738 /* Build configuration list for PBXNativeTarget "SpartaCodingCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDA497C2A6763BB00F82738 /* Debug */,
+				FFDA497D2A6763BB00F82738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDA497E2A6763BB00F82738 /* Build configuration list for PBXNativeTarget "SpartaCodingCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDA497F2A6763BB00F82738 /* Debug */,
+				FFDA49802A6763BB00F82738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDA49812A6763BB00F82738 /* Build configuration list for PBXNativeTarget "SpartaCodingCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDA49822A6763BB00F82738 /* Debug */,
+				FFDA49832A6763BB00F82738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFDA49492A6763BA00F82738 /* Project object */;
+}
