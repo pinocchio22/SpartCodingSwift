@@ -26,6 +26,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                        <connections>
+                                            <segue destination="Fz9-K0-uVw" kind="show" identifier="emailSegue" id="rln-oE-tok"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -110,6 +113,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="VGc-XH-JLB">
+            <objects>
+                <viewController id="Fz9-K0-uVw" customClass="EmailViewController" customModule="testLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fwz-ZA-jWU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="s53-my-apE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="inm-yq-CLE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQS-QW-zVZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1960" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IAD-E6-ggh">

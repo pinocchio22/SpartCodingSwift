@@ -6,7 +6,7 @@ var multiplyResult = 0.0 // 곱셈 연산
 var divideResult = 0.0 // 나눗셈 연산
 var remainderResult = 0 // 나머지 연산
 
-let input = "330%7"
+let input = "330-7"
 
 let regex = /[-+*%\/]/
 var sign = input.matches(of: regex).map{String($0.output)}[0]
@@ -29,9 +29,9 @@ class Calculator {
         case "*": multiplyResult = MultiplyOperation().operate(first: firstNumber,second: secondNumber)
         case "/": divideResult = DivideOperation().operate(first: firstNumber,second: secondNumber)
         case "%": remainderResult = RemainOperation(first: firstNumber,second: secondNumber)
-        default: return 0.0
+        default: return -1
         }
-        return 0.0
+        return -1
        }
     
     func RemainOperation(first: Double, second: Double) -> Int {

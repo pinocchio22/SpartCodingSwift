@@ -75,6 +75,17 @@ class ViewController: UIViewController {
 
 
 extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let cnt = textField.text?.count ?? 0
+        
+        if cnt > 0 {
+            performSegue(withIdentifier: "emailSegue", sender: nil)
+        }
+        
+        return true
+    }
+    
     // textField에서 편집이 실행된 다음에 호출
     func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.setAnimationsEnabled(false)

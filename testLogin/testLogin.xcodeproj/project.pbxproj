@@ -13,6 +13,7 @@
 		FFDA49982A67B0C400F82738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA49962A67B0C400F82738 /* Main.storyboard */; };
 		FFDA499A2A67B0C500F82738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDA49992A67B0C500F82738 /* Assets.xcassets */; };
 		FFDA499D2A67B0C500F82738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA499B2A67B0C500F82738 /* LaunchScreen.storyboard */; };
+		FFDA49A52A67CC9000F82738 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49A42A67CC9000F82738 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FFDA49992A67B0C500F82738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFDA499C2A67B0C500F82738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFDA499E2A67B0C500F82738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFDA49A42A67CC9000F82738 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FFDA49992A67B0C500F82738 /* Assets.xcassets */,
 				FFDA499B2A67B0C500F82738 /* LaunchScreen.storyboard */,
 				FFDA499E2A67B0C500F82738 /* Info.plist */,
+				FFDA49A42A67CC9000F82738 /* EmailViewController.swift */,
 			);
 			path = testLogin;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				FFDA49952A67B0C400F82738 /* ViewController.swift in Sources */,
 				FFDA49912A67B0C400F82738 /* AppDelegate.swift in Sources */,
 				FFDA49932A67B0C400F82738 /* SceneDelegate.swift in Sources */,
+				FFDA49A52A67CC9000F82738 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
