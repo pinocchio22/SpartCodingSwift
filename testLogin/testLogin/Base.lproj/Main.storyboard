@@ -121,8 +121,33 @@
                     <view key="view" contentMode="scaleToFill" id="Fwz-ZA-jWU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJ6-U5-GmW">
+                                <rect key="frame" x="0.0" y="60" width="393" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaP-WA-31q">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QNL-qK-jE0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="s53-my-apE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s53-my-apE" firstAttribute="bottom" secondItem="yJ6-U5-GmW" secondAttribute="bottom" id="4u9-Mk-RMr"/>
+                            <constraint firstItem="yJ6-U5-GmW" firstAttribute="leading" secondItem="s53-my-apE" secondAttribute="leading" id="MM4-eA-eDR"/>
+                            <constraint firstItem="yJ6-U5-GmW" firstAttribute="bottom" secondItem="s53-my-apE" secondAttribute="bottom" id="QKP-PV-qdu"/>
+                            <constraint firstItem="yaP-WA-31q" firstAttribute="top" secondItem="Fwz-ZA-jWU" secondAttribute="top" id="Rcu-1C-dwP"/>
+                            <constraint firstItem="yJ6-U5-GmW" firstAttribute="leading" secondItem="s53-my-apE" secondAttribute="leading" id="X0y-Kh-IxJ"/>
+                            <constraint firstItem="yJ6-U5-GmW" firstAttribute="trailing" secondItem="s53-my-apE" secondAttribute="trailing" id="bPK-lX-4Xg"/>
+                            <constraint firstAttribute="trailing" secondItem="yaP-WA-31q" secondAttribute="trailing" id="jmd-bu-vHi"/>
+                            <constraint firstItem="yaP-WA-31q" firstAttribute="leading" secondItem="s53-my-apE" secondAttribute="leading" id="r09-aD-Pzq"/>
+                            <constraint firstItem="yJ6-U5-GmW" firstAttribute="top" secondItem="yaP-WA-31q" secondAttribute="bottom" id="rOu-TC-PKr"/>
+                            <constraint firstItem="s53-my-apE" firstAttribute="trailing" secondItem="yJ6-U5-GmW" secondAttribute="trailing" id="z3w-lA-CEe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="inm-yq-CLE"/>
                 </viewController>

@@ -12,7 +12,6 @@
 		FFDA49592A6763BA00F82738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49582A6763BA00F82738 /* ViewController.swift */; };
 		FFDA495C2A6763BA00F82738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA495A2A6763BA00F82738 /* Main.storyboard */; };
 		FFDA495E2A6763BB00F82738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDA495D2A6763BB00F82738 /* Assets.xcassets */; };
-		FFDA49612A6763BB00F82738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA495F2A6763BB00F82738 /* LaunchScreen.storyboard */; };
 		FFDA496C2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA496B2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift */; };
 		FFDA49762A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49752A6763BB00F82738 /* SpartaCodingCalculatorUITests.swift */; };
 		FFDA49782A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA49772A6763BB00F82738 /* SpartaCodingCalculatorUITestsLaunchTests.swift */; };
@@ -42,7 +41,6 @@
 		FFDA49582A6763BA00F82738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFDA495B2A6763BA00F82738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFDA495D2A6763BB00F82738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFDA49602A6763BB00F82738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFDA49622A6763BB00F82738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDA49672A6763BB00F82738 /* SpartaCodingCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartaCodingCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDA496B2A6763BB00F82738 /* SpartaCodingCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartaCodingCalculatorTests.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				FFDA49582A6763BA00F82738 /* ViewController.swift */,
 				FFDA495A2A6763BA00F82738 /* Main.storyboard */,
 				FFDA495D2A6763BB00F82738 /* Assets.xcassets */,
-				FFDA495F2A6763BB00F82738 /* LaunchScreen.storyboard */,
 				FFDA49622A6763BB00F82738 /* Info.plist */,
 			);
 			path = SpartaCodingCalculator;
@@ -231,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFDA49612A6763BB00F82738 /* LaunchScreen.storyboard in Resources */,
 				FFDA495E2A6763BB00F82738 /* Assets.xcassets in Resources */,
 				FFDA495C2A6763BA00F82738 /* Main.storyboard in Resources */,
 			);
@@ -303,14 +299,6 @@
 				FFDA495B2A6763BA00F82738 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FFDA495F2A6763BB00F82738 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFDA49602A6763BB00F82738 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

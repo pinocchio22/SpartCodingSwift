@@ -94,12 +94,13 @@ extension ViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if string.count > 0 {
-            guard string.rangeOfCharacter(from: charSet) == nil else {
+            guard (string.rangeOfCharacter(from: charSet) == nil) else {
                 return false
             }
         }
         
         let finalText = NSMutableString(string: textField.text ?? "")
+        
         finalText.replaceCharacters(in: range, with: string)
         
         let font = textField.font ?? UIFont.systemFont(ofSize: 16)
@@ -118,6 +119,7 @@ extension ViewController: UITextFieldDelegate {
         
         nextButton.isEnabled = finalText.length > 0
         
+        print(finalText.size(withAttributes: dict))
         return true
     }
 }
