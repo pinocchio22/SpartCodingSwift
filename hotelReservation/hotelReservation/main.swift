@@ -34,37 +34,45 @@ for i in stride(from: 100000, to: 500001, by: 10000) {
     numarr += [i]
 }
 
-print(guide)
-
-switch readLine() {
-    case "1":
-        provideMoney()
-    case "2":
-        print(2)
-    case "3":
-        print(3)
-    case "4":
-        print(4)
-    case "5":
-        print(5)
-    case "6":
-        print(6)
-    case "7":
-        print(7)
-    case "8":
-        print(8)
-    case "9":
-        print(9)
-    default:
-        print("실패")
+while true {
+    print(guide)
+    switch readLine() {
+        case "1":
+            provideMoney()
+        case "2":
+            showRoom()
+        case "3":
+            print(3)
+        case "4":
+            print(4)
+        case "5":
+            print(5)
+        case "6":
+            print(6)
+        case "7":
+            print(7)
+        case "8":
+            print(8)
+        case "9":
+            print(9)
+        default:
+            print("실패")
+    }
 }
+
 
 // 1
 func provideMoney() {
     account += numarr.randomElement() ?? 0
     print("계좌잔액은 \(account)입니다.")
 }
+
 // 2
+func showRoom() {
+    for i in 1...5 {
+        print("\(i)번방 1박 \(i)0000원 ")
+    }
+}
 
 // 3
 
