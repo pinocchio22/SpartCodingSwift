@@ -34,6 +34,9 @@ for i in stride(from: 100000, to: 500001, by: 10000) {
     numarr += [i]
 }
 
+// roomList [1: ["0720", "0722"]]
+var roomDict: [Int: [String]] = [:]
+
 while true {
     print(guide)
     switch readLine() {
@@ -42,11 +45,11 @@ while true {
         case "2":
             showRoom()
         case "3":
-            print(3)
+            reserveRoom()
         case "4":
-            print(4)
+            checkMyroom()
         case "5":
-            print(5)
+            checkSortedMyroom()
         case "6":
             print(6)
         case "7":
@@ -55,6 +58,8 @@ while true {
             print(8)
         case "9":
             print(9)
+        case "0":
+            exit(0)
         default:
             print("실패")
     }
@@ -75,11 +80,59 @@ func showRoom() {
 }
 
 // 3
+func reserveRoom() {
+    // 사용자 입력
+    print("원하시는 호텔방 번호를 입력하세요")
+    let roomNum = readLine()
+    print("원하시는 체크인 날짜를 입력하세요")
+    let checkIn = readLine()
+    print("원하시는 체크아웃 날짜를 입력하세요")
+    let checkOut = readLine()
+    
+    // 예약 가능 여부
+    if roomNum == "" {
+        print("방번호가 입력되지 않았습니다")
+    } else if checkIn == "" || checkOut == "" {
+        print("날짜가 입력되지 않았습니다")
+    } else if account < Int(roomNum!)!*10000 {
+        print("계좌에 돈이 부족합니다")
+    } else {
+        // 예약 성공
+        if let roomNum = roomNum, let checkIn = checkIn, let checkOut = checkOut {
+            roomDict.updateValue([checkIn,checkOut], forKey: Int(roomNum) ?? 00)
+            account -= Int(roomNum)!
+            print(roomDict)
+        }
+    }
+}
 
 // 4
+func checkMyroom() {
+    for i in 1...5 {
+        if roomDict[i] != nil {
+            print(roomDict[i]!)
+        }
+    }
+}
+
+//func showDict() {
+//    for i in 1...5 {
+//        if roomDict[i] != nil {
+//            print(roomDict[i]!)
+//        }
+//    }
+//}
 
 // 5
-
+func checkSortedMyroom() {
+//    var sortedDict = roomDict.sorted {$0.value[0] < $1.value[0]}
+//        print(sortedDict)
+    let temp = roomDict.map{$0.value}
+    let sortedDict = temp.sorted{$0[0] < $1[0]}
+    for day in sortedDict {
+        print(day)
+    }
+}
 // 6
 
 // 7
@@ -87,3 +140,4 @@ func showRoom() {
 // 8
 
 // 9
+
