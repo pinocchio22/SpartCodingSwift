@@ -121,7 +121,7 @@ func reserveRoom() {
 // 4
 func checkMyroom() {
     for item in roomDict {
-        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크이웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
+        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크아웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
     }
 }
 
@@ -129,7 +129,7 @@ func checkMyroom() {
 func checkSortedMyroom() {
     var sortedDict = roomDict.sorted {$0.value[0] < $1.value[0]}
     for item in sortedDict {
-        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크이웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
+        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크아웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
     }
 }
 
