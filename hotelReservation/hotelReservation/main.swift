@@ -120,10 +120,8 @@ func reserveRoom() {
 
 // 4
 func checkMyroom() {
-    for i in 0...5 {
-        if roomDict.keys.contains(i) {
-            print("방번호: \(i) 체크인 날짜: \(roomDict[i]![0]) 체크아웃 날짜: \(roomDict[i]![1]) 1박가격\(i*10000)원")
-        }
+    for item in roomDict {
+        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크이웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
     }
 }
 
@@ -133,10 +131,6 @@ func checkSortedMyroom() {
     for item in sortedDict {
         print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크이웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
     }
-    
-//    let temp = roomDict.map{$0.value}
-//    // ["체크인: 0707", "체크아웃: 0708"]
-//    let sortedDict = temp.sorted{$0[0] < $1[0]}
 }
 
 // 6
@@ -166,10 +160,8 @@ func changeRoom() {
         } else {
             // 방 업데이트
             roomDict[Int(changeNum)] =  roomDict[Int(preNum) ]
-            
             // 기존의 예약 삭제
             roomDict[Int(preNum) ] = nil
-            
             // 잔액 변경
             myMoney += ((preNum-changeNum))*10000
         }
