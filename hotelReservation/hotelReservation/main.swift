@@ -25,6 +25,42 @@ var guide = """
 원하시는 기능의 번호를 입력해 주세요
 """
 
+// class hotel
+class HotelRoom {
+    var roomNum: Int
+    var price: Int
+    
+    init(roomNum: Int, price: Int) {
+        self.roomNum = roomNum
+        self.price = price
+    }
+}
+
+// class Reservation
+class Reservation {
+    var room: HotelRoom
+    var checkIn: String
+    var checkOut: String
+    var days: Int
+    
+    init(room: HotelRoom, checkIn: String, checkOut: String, days: Int) {
+        self.room = room
+        self.checkIn = checkIn
+        self.checkOut = checkOut
+        self.days = days
+    }
+}
+
+var roomList = [
+    HotelRoom(roomNum: 1, price: 100000),
+    HotelRoom(roomNum: 2, price: 200000),
+    HotelRoom(roomNum: 3, price: 300000),
+    HotelRoom(roomNum: 4, price: 400000),
+    HotelRoom(roomNum: 5, price: 500000)
+]
+
+var reservationList = [Reservation]()
+
 // money 초기화
 var myMoney = 0
 
@@ -82,8 +118,8 @@ func provideMoney() {
 
 // 2
 func showRoom() {
-    for i in 1...5 {
-        print("\(i)번방 1박 \(i)0000원 ")
+    for item in roomList {
+        print("\(item.roomNum)번방 1박 \(item.price)원")
     }
 }
 
@@ -108,8 +144,10 @@ func reserveRoom() {
     } else {
         // 예약 성공
         if let roomNum = Int(roomNum), let checkIn = checkIn, let checkOut = checkOut {
-            roomDict.updateValue([checkIn,checkOut], forKey: Int(roomNum) )
-            let charge = (Int(roomNum) )*10000*((Int(checkOut) ?? 0) - (Int(checkIn) ?? 0))
+            reservationList.append(Reservation(room: HotelRoom(roomNum: roomNum, price: roomNum*10000), checkIn: checkIn, checkOut: checkOut, days: (Int(checkOut) ?? 0) - (Int(checkIn) ?? 0)))
+            
+            // 금액 계산
+            let charge = roomNum * 10000 * ((Int(checkOut) ?? 0) - (Int(checkIn) ?? 0))
             myMoney -= charge
             // 내역 저장
             myAccount += ["예약 완료로 \(charge)원이 출금되었습니다. 잔액: \(myMoney)"]
@@ -120,16 +158,16 @@ func reserveRoom() {
 
 // 4
 func checkMyroom() {
-    for item in roomDict {
-        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크이웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
+    for i in 0...reservationList.count-1 {
+        print("\(i+1). 방번호: \(reservationList[i].room.roomNum) 체크인 날짜: \(reservationList[i].checkIn) 체크아웃 날짜: \(reservationList[i].checkOut) 1박가격: \(reservationList[i].room.price)원")
     }
 }
 
 // 5
 func checkSortedMyroom() {
-    var sortedDict = roomDict.sorted {$0.value[0] < $1.value[0]}
-    for item in sortedDict {
-        print("방번호: \(item.key) 체크인 날짜: \(item.value[0]) 체크이웃 날짜: \(item.value[1]) 1박가격\(item.key*10000)원")
+    let sortedList = reservationList.sorted{ $0.checkIn < $1.checkIn }
+    for item in sortedList {
+        print("방번호: \(item.room.roomNum) 체크인 날짜: \(item.checkIn) 체크아웃 날짜: \(item.checkOut) 1박가격: \(item.room.price * item.days)원")
     }
 }
 
@@ -138,11 +176,10 @@ func deleteRoom() {
     checkMyroom()
     print("취소를 원하는 예약의 번호를 입력하세요")
     if let num = Int(readLine() ?? "") {
-        roomDict[Int(num)] = nil
-        myMoney += (Int(num))*10000
-        
-        // 내역 저장
-        myAccount += ["예약 완료로 \((Int(num) )*10000)원이 출금되었습니다. 잔액: \(myMoney)"]
+        myMoney += reservationList[num-1].room.price * reservationList[num-1].days
+        myAccount += ["예약 취소로 \(reservationList[num-1].room.price * reservationList[num-1].days)원이 입급되었습니다. 잔액: \(myMoney)"]
+        reservationList.remove(at: num-1)
+        print("\(num)번 예약의 취소가 완료 되었습니다.")
     }
 }
 
@@ -155,15 +192,18 @@ func changeRoom() {
     let changeNum = readLine() ?? ""
     // 변경 가능 여부
     if let preNum = Int(preNum), let changeNum = Int(changeNum) {
-        if roomDict.keys.contains(Int(changeNum)) {
+        if (reservationList.map{ $0.room.roomNum }).contains(changeNum) {
             print("이미 예약이 되어있는 방입니다.")
         } else {
-            // 방 업데이트
-            roomDict[Int(changeNum)] =  roomDict[Int(preNum) ]
-            // 기존의 예약 삭제
-            roomDict[Int(preNum) ] = nil
-            // 잔액 변경
-            myMoney += ((preNum-changeNum))*10000
+            reservationList[preNum-1].room.roomNum = changeNum
+            reservationList[preNum-1].room.price = changeNum * 10000
+            if (preNum - changeNum) > 0 {
+                myAccount += ["예약 변경으로 \((preNum - changeNum) * 10000)원 입금되었습니다. 잔액: \(myMoney)"]
+            } else {
+                myAccount += ["예약 변경으로 \((preNum - changeNum) * 10000)원 출금되었습니다. 잔액: \(myMoney)"]
+            }
+            myMoney += (preNum - changeNum) * 10000
+            print("\(preNum)번 예약이 \(changeNum)번 방 예약으로 변경되었습니다.")
         }
     }
 }
