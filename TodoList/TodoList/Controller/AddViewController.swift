@@ -19,7 +19,7 @@ class AddViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        print(categorySection)
+        tableView.sectionHeaderTopPadding = 3
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +36,7 @@ class AddViewController: UIViewController {
         let sucess = UIAlertAction(title: "확인", style: .default){ ok in
             print("확인 버튼이 눌렸습니다.")
             DataManager.dataManager.createTodo(TodoData(title: alert.textFields?.first?.text ?? "",category: alert.textFields?.last?.text ?? "defaluts" , isCompleted: false, id: UUID().uuidString))
+            self.tableView.reloadData()
         }
         let cancel = UIAlertAction(title: "취소", style: .destructive){ cancel in
             print("취소 버튼이 눌렸습니다.")
@@ -69,7 +70,7 @@ extension AddViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let detailViewController = self.storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else { return }
-        detailViewController.todoData = DataManager.dataManager.dataList[indexPath.row]
+        detailViewController.todoData = DataManager.dataManager.dataList.filter{ $0.category == Array(categorySection).sorted()[indexPath.section] }[indexPath.row]
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     
@@ -79,5 +80,9 @@ extension AddViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return String(Array(categorySection).sorted()[section])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
     }
 }

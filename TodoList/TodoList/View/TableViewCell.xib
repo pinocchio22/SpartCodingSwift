@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="TodoList_URLsession" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="TodoList" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAo-3r-MLR">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                        <rect key="frame" x="10" y="5" width="240" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GxO-V5-59y">
-                        <rect key="frame" x="260" y="0.0" width="62" height="44"/>
+                        <rect key="frame" x="260" y="5" width="62" height="34"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="Wgm-eC-0Tx"/>
                         </constraints>
@@ -33,12 +33,12 @@
                     </switch>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="sAo-3r-MLR" secondAttribute="bottom" id="1Nx-Rg-Llh"/>
-                    <constraint firstAttribute="bottom" secondItem="GxO-V5-59y" secondAttribute="bottom" id="BHA-qE-XjO"/>
-                    <constraint firstItem="sAo-3r-MLR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SU1-r6-OXB"/>
-                    <constraint firstItem="sAo-3r-MLR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WeY-eK-eLb"/>
+                    <constraint firstAttribute="bottom" secondItem="sAo-3r-MLR" secondAttribute="bottom" constant="5" id="1Nx-Rg-Llh"/>
+                    <constraint firstAttribute="bottom" secondItem="GxO-V5-59y" secondAttribute="bottom" constant="5" id="BHA-qE-XjO"/>
+                    <constraint firstItem="sAo-3r-MLR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SU1-r6-OXB"/>
+                    <constraint firstItem="sAo-3r-MLR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="WeY-eK-eLb"/>
                     <constraint firstAttribute="trailing" secondItem="GxO-V5-59y" secondAttribute="trailing" id="XjL-Sh-zYT"/>
-                    <constraint firstItem="GxO-V5-59y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iJT-bs-iJG"/>
+                    <constraint firstItem="GxO-V5-59y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="iJT-bs-iJG"/>
                     <constraint firstItem="GxO-V5-59y" firstAttribute="leading" secondItem="sAo-3r-MLR" secondAttribute="trailing" constant="10" id="mM5-wd-jg7"/>
                 </constraints>
             </tableViewCellContentView>
