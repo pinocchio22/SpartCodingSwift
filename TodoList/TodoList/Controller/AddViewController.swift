@@ -68,6 +68,7 @@ extension AddViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let detailViewController = self.storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else { return }
         detailViewController.todoData = DataManager.dataManager.dataList.filter{ $0.category == Array(categorySection).sorted()[indexPath.section] }[indexPath.row]
